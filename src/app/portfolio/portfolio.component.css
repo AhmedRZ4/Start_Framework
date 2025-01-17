@@ -1,0 +1,17 @@
+
+.layer{
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(41, 175, 149,.8);
+    background-image: url('../../../public/Images/download.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    transition: opacity .5s;
+}
+figure:hover .layer{
+    opacity: 1;
+}

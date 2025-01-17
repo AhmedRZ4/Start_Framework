@@ -1,0 +1,24 @@
+<div class="container vh-100 ">
+  <div class="d-flex align-items-center justify-content-center">
+  <app-header [headerValue]="headerValue" [bgColor]="bgColor" [textColor]="textColor"></app-header>
+</div>
+<div class="row g-3 my-5">
+    @for (item of images; track $index) {
+    <div class="col-md-6 col-lg-4 px-4">
+        <figure class="position-relative overflow-hidden" (click)="openModal(item)">
+             <img [src]="item" alt="" class="img-fluid w-100 rounded-3">
+             <div class="layer rounded-3"></div>     
+            </figure>
+    </div>
+    }
+</div>
+  <div #exampleModal class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-body">
+          <img [src]="imageInModal" alt="" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
