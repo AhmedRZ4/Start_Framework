@@ -1,0 +1,11 @@
+a{
+    color: white !important;
+    text-transform: uppercase;
+}
+li{
+    margin-left: .5rem;
+}
+li .active{
+    background-color: #1ABC9C !important;
+    border-radius: 15%;
+}

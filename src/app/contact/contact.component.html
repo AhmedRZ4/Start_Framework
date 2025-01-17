@@ -2,17 +2,21 @@
     <app-header [headerValue]="headerValue" [bgColor]="bgColor" [textColor]="textColor"></app-header>
 
 </div>
-<div class="container d-flex flex-column align-items-center justify-content-center py-5">
-    <div class="w-50 row g-5">
-        <input id="userName" type="text" placeholder="userName" name="userName"
-            class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
-        <input id="userAge" type="text" placeholder="userAge" name="userAge"
-            class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
-        <input id="userEmail" type="text" placeholder="userEmail" name="userEmail"
-            class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
-        <input id="userPassword" type="text" placeholder="userPassword" name="userPassword"
-            class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
-    <button class="btn mt-4 text-white align-self-start w-25" style="background-color: #1abc9c;"> send Message </button>
-
-    </div>
+<div class="container d-flex flex-column align-items-center justify-content-center pb-5">
+    <form class="container" action="">
+        <div class="w-50 m-auto">
+            <div class=" row gy-4 d-flex flex-column align-items-center ">
+                <input id="userName" type="text" placeholder="userName" name="userName"
+                    class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+                <input id="userAge" type="text" placeholder="userAge" name="userAge"
+                    class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+                <input id="userEmail" type="text" placeholder="userEmail" name="userEmail"
+                    class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+                <input id="userPassword" type="text" placeholder="userPassword" name="userPassword"
+                    class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+            </div>
+            <button class="btn mt-4 text-white align-self-start" style="background-color: #1abc9c;" type="reset"> send Message
+            </button>
+        </div>
+    </form>
 </div>
