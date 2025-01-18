@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 export const routes: Routes = [
@@ -10,4 +11,6 @@ export const routes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'portfolio', component: PortfolioComponent },
     { path: 'home', component: HomeComponent },
-    { path: '', redirectTo: '/home', pathMatch: 'full' },];
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    {path:'**',component: NotfoundComponent }
+];

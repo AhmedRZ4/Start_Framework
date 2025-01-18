@@ -1,0 +1,12 @@
+div{
+    position: relative;
+    background-image: url('../../../public/Images/notfound.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+a{
+    position: absolute; 
+    left: 50%;
+    bottom: 30%;
+}

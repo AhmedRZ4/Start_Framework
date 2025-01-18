@@ -9,3 +9,7 @@ li .active{
     background-color: #1ABC9C !important;
     border-radius: 15%;
 }
+.nav-link{
+    display: inline;
+    padding: .5rem;
+}
